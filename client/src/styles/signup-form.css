@@ -1,0 +1,142 @@
+/* SignUpForm.css */
+
+.signup-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .signup-form input,
+  .signup-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .signup-form input:focus,
+  .signup-form textarea:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+  }
+  
+  .signup-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .signup-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .signup-form {
+      padding: 10px;
+    }
+  
+    .signup-form input,
+    .signup-form textarea {
+      padding: 12px;
+    }
+  }
+  
+/* SignUpFormOptions.css */
+
+.signup-form-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.options-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.options-buttons h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.options-buttons button {
+  background-color: #000000;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.options-buttons button:hover {
+  background-color: #4e4e4e;
+}
+
+.options-content {
+  text-align: center;
+}
+
+.options-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.options-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .signup-form-options {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .options-buttons {
+    order: -1;
+    max-width: 40%;
+    margin-bottom: 0;
+  }
+
+  .options-content {
+    max-width: 50%;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+  

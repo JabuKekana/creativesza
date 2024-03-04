@@ -1,0 +1,74 @@
+.shop-reviews {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .reviews-slider {
+    margin-bottom: 20px;
+  }
+  
+  .review-card {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .user-info {
+    font-weight: bold;
+  }
+  
+  .review-text {
+    margin-top: 10px;
+  }
+  
+  .divider {
+    border: 1px solid #ddd;
+    margin: 15px 0;
+  }
+  
+  .delete-review-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-review-button:hover {
+    background-color: #0056b3;
+  }
+
+.slick-dots.custom-dots li {
+    visibility: hidden;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .shop-reviews {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .review-card {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .add-review-button {
+      font-size: 12px;
+    }
+  }
+  

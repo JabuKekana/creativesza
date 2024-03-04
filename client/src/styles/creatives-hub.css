@@ -1,0 +1,220 @@
+.creatives-hub-section {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  animation: scaleIn 2s ease-out;
+}
+
+.content-container {
+  z-index: 1;
+  padding: 50px;
+  position: relative;
+}
+
+.creatives-hub-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.creatives-hub-section .hub-description {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.913));
+}
+
+.creatives-hub-section .hub-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0 50px 0;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.creatives-hub-section .feature {
+  flex: 1;
+  max-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.creatives-hub-section .feature:hover {
+  transform: scale(1.05);
+}
+
+.creatives-hub-section .feature h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.creatives-hub-section .feature p {
+  font-size: 1rem;
+  color: #888888;
+}
+
+.creatives-hub-section .view-products-button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.creatives-hub-section .view-products-button:hover {
+  background-color: #b6b6b6;
+}
+
+@media only screen and (max-width: 767px) {
+  .creatives-hub-section .view-products-button {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}
+
+.creatives-hub-section .context {
+  width: 100%;
+  position: absolute;
+  top: 50vh;
+}
+
+.creatives-hub-section .content-container h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.913));
+}
+
+.creatives-hub-section .area {
+  background-image: url("../assets/black-white-art.jpg");
+  width: 100%;
+  height: auto;
+}
+
+.creatives-hub-section .circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.creatives-hub-section .circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.creatives-hub-section .circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.creatives-hub-section .circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.creatives-hub-section .circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.creatives-hub-section .circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.creatives-hub-section .circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.creatives-hub-section .circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.creatives-hub-section .circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.creatives-hub-section .circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.creatives-hub-section .circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.creatives-hub-section .circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,189 @@
+.CTA-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.CTA-section .CTA-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  margin-right: 5rem;
+}
+
+.CTA-section .CTA-content h1 {
+  color: #000000;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.913));
+  margin-left: 10px;
+  text-align: end;
+}
+
+.CTA-section .CTA-content h1 {
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+  margin-top: 1.8rem;
+}
+
+.CTA-section .CTA-content p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  margin-left: 10px;
+  text-align: end;
+  margin-top: 1.5rem;
+}
+
+.CTA-section .CTA-content__input {
+  width: 100%;
+  margin: 2rem 0 1rem;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.CTA-section .CTA-content__input input {
+  flex: 2;
+  width: 100%;
+  min-height: 50px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  background-color: #ffffff;
+  padding: 0 1rem;
+  outline: none;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-left: 12px;
+}
+
+.CTA-section .CTA-content__input button {
+  flex: 0.8;
+  width: 100%;
+  min-height: 50px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  background: #000000;
+  border: 2px solid #000000;
+  padding: 0 1rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.CTA-section .CTA-content__input button:hover {
+  color: #ffffff;
+  background-color: #3b3b3b;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.CTA-section .CTA-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CTA-section .CTA-image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+  .CTA-section {
+    flex-direction: column;
+  }
+
+  .CTA-section .CTA-content {
+    margin: 0 0 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .CTA-section .CTA-content h1 {
+    font-size: 28px;
+    line-height: 60px;
+    margin-left: 6px;
+    margin-right: 6px;
+    text-align: center;
+  }
+
+  .CTA-section .CTA-content p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
+  }
+
+  .CTA-section .CTA-content__people {
+    flex-direction: column;
+  }
+
+  .CTA-section .CTA-content__people p {
+    margin: 0;
+  }
+
+  .CTA-section .CTA-content__input input,
+  .CTA-section .CTA-content__input button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .CTA-section .CTA-content h1 {
+    font-size: 38px;
+    line-height: 60px;
+    margin-left: 6px;
+    margin-right: 6px;
+    text-align: center;
+  }
+
+  .CTA-section .CTA-content p {
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
+  }
+  .CTA-section .CTA-content__input input {
+    margin-left: 10px;
+  }
+  .CTA-section .CTA-content__input button {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .CTA-section .CTA-content h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .CTA-section .CTA-content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .CTA-section .CTA-content__input input,
+  .CTA-section .CTA-content__input button {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .CTA-section .CTA-content__input input {
+    margin-left: 10px;
+  }
+  .CTA-section .CTA-content__input button {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,100 @@
+.superadmin-shop-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .superadmin-shop-list h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .superadmin-shop-list .error-message {
+    color: #ff3333;
+  }
+  
+  .superadmin-shop-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .superadmin-shop-list th, .superadmin-shop-list td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .superadmin-shop-list th {
+    background-color: #f2f2f2;
+  }
+  
+  .superadmin-shop-list .add-shop-section {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .superadmin-shop-list label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .superadmin-shop-list input, .superadmin-shop-list textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  .superadmin-shop-list .add-shop-btn {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .superadmin-shop-list .add-shop-btn:hover {
+    background-color: #424242;
+  }
+  
+  /* Style for links inside the table */
+  .superadmin-shop-list a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  .superadmin-shop-list a:hover {
+    text-decoration: underline;
+  }
+
+  .superadmin-shop-list a.button-link {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .superadmin-shop-list a.button-link:hover {
+    background-color: #424242;
+    text-decoration: none;
+  }
+  
+  .superadmin-shop-list button {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .superadmin-shop-list button:hover {
+    background-color: #d41811;
+  }
+  

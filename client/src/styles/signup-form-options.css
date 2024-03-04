@@ -1,0 +1,72 @@
+/* SignUpFormOptions.css */
+
+.signup-form-options .signup-form-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.signup-form-options .options-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-form-options .options-buttons h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.signup-form-options .options-buttons .button-options {
+  background-color: #000000;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.signup-form-options .options-buttons .button-options:hover {
+  background-color: #4e4e4e;
+}
+
+.signup-form-options .options-content {
+  text-align: center;
+}
+
+.signup-form-options .options-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.signup-form-options .options-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+
+@media (min-width: 768px) {
+  .signup-form-options {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .signup-form-options .options-buttons {
+    order: -1;
+    max-width: 40%;
+    margin-bottom: 0;
+  }
+
+  .signup-form-options .options-content {
+    max-width: 50%;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}

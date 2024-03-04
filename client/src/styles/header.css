@@ -1,0 +1,129 @@
+.header-section {
+    position: relative;
+    background-image: url('../assets/header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .header-section .header-text {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+  }
+  
+  .header-section .header-text h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    margin-bottom: 20px;
+  }
+  
+  .header-section .header-text p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+  }
+  
+  .header-section .header-text button {
+    margin-top: 40px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 55px;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .header-section .header-text button:hover {
+    background: none;
+    color: #ffffff;
+    border: #ffffff solid 2px;
+  }
+
+  .header-section .header-text a {
+text-decoration: none;
+color: #000000;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .header-section .header-text {
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .header-section .header-text h1 {
+      font-size: 36px;
+      line-height: 120%;
+    }
+  
+    .header-section .header-text p {
+      font-size: 16px;
+      line-height: 130%;
+    }
+  
+    .header-section .header-text button {
+      font-size: 1.2rem;
+      padding: 0.8rem 1.6rem;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .header-section .header-text {
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      text-align: left;
+    }
+  
+    .header-section .header-text h1 {
+      font-size: 42px;
+      line-height: 130%;
+    }
+  
+    .header-section .header-text p {
+      font-size: 18px;
+      line-height: 140%;
+    }
+  
+    .header-section .header-text button {
+      font-size: 1.3rem;
+      padding: 1rem 2rem;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .header-section .header-text {
+      top: 50%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      text-align: left;
+    }
+  
+    .header-section .header-text h1 {
+      font-size: 48px;
+      line-height: 140%;
+    }
+  
+    .header-section .header-text p {
+      font-size: 20px;
+      line-height: 150%;
+    }
+  
+    .header-section .header-text button {
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+    }
+  }
+  

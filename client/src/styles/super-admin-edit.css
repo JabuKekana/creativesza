@@ -1,0 +1,183 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.superadmin-shop-list {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.superadmin-shop-details .error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.super-admin-shop-edit form,
+.super-admin-product-edit form {
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+.super-admin-shop-edit label,
+.super-admin-product-edit label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.super-admin-shop-edit input,
+.super-admin-product-edit input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.super-admin-shop-edit button,
+.super-admin-product-edit button {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.super-admin-shop-edit button:hover,
+.super-admin-product-edit button:hover {
+  background-color: #252525;
+}
+
+.super-admin-shop-edit .delete-btn,
+.super-admin-product-edit .delete-btn {
+  background-color: #d41811;
+  color: white;
+  padding: 10px 15px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.super-admin-shop-edit .delete-btn:hover,
+.super-admin-product-edit .delete-btn:hover {
+  background-color: #d9534f;
+}
+
+.super-admin-shop-edit .superadmin-shop-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.super-admin-shop-edit .image-container {
+  flex: 0 1 calc(50% - 10px);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.super-admin-shop-edit .image-container img {
+  width: 200px;
+  height: 200px; 
+  object-fit: cover; 
+  margin-bottom: 10px;
+}
+
+.super-admin-shop-edit .image-title {
+  font-weight: bold;
+}
+
+.super-admin-shop-edit .image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+
+
+
+
+
+
+.super-admin-shop-edit {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-container {
+  flex: 1;
+  margin-right: 20px; 
+}
+
+.superadmin-shop-images {
+  flex: 1;
+  margin-top: 20px; 
+} 
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-wrapper {
+  flex: 0 1 calc(50% - 10px);
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .super-admin-shop-edit {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .superadmin-shop-images {
+  flex: 1;
+  margin-top: 20px; 
+} 
+
+.super-admin-shop-edit .superadmin-shop-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 0px;
+}
+
+.super-admin-shop-edit .image-container img {
+  width: 100px;
+  height: 100px; 
+  object-fit: cover; 
+
+}
+
+  .form-container {
+    margin-right: 0;
+  } 
+
+  .image-container {
+    flex-direction: column;
+
+  } 
+
+  .image-wrapper {
+    flex: 1 1 100%;
+    margin-bottom: 0;
+    padding: 10px;
+  }
+  
+}
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+.review-form-section {
+    margin-top: 20px;
+  }
+  
+  .review-form-section .review-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .review-form-section .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .review-form-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .review-form-section input,
+  .review-form-section select,
+  .review-form-section textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .review-form-section button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .review-form-section button:hover {
+    background-color: #0056b3;
+  }
+  
