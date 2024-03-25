@@ -29,7 +29,7 @@ const SuperAdminShopDetails = () => {
   const fetchShopDetails = async () => {
     try {
       const shopResponse = await fetch(
-        `http://192.168.7.141:5000/shops/${shop_id}`
+        `http://localhost:5000/shops/${shop_id}`
       );
       const shopData = await shopResponse.json();
       setShopDetails(shopData);
@@ -47,7 +47,7 @@ const SuperAdminShopDetails = () => {
       });
 
       const productsResponse = await fetch(
-        `http://192.168.7.141:5000/products/${shop_id}`
+        `http://localhost:5000/products/${shop_id}`
       );
       const productsData = await productsResponse.json();
       setProducts(productsData);
@@ -84,7 +84,7 @@ const SuperAdminShopDetails = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://192.168.7.141:5000/shops/${shop_id}`, {
+      const response = await fetch(`http://localhost:5000/shops/${shop_id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -120,7 +120,7 @@ const SuperAdminShopDetails = () => {
   const handleProductFormSubmit = async (productId) => {
     try {
       const response = await fetch(
-        `http://192.168.7.141:5000/products/${productId}`,
+        `http://localhost:5000/products/${productId}`,
         {
           method: "PUT",
           headers: {
@@ -151,7 +151,7 @@ const SuperAdminShopDetails = () => {
     if (isConfirmed) {
       try {
         const response = await fetch(
-          `http://192.168.7.141:5000/products/${productId}`,
+          `http://localhost:5000/products/${productId}`,
           {
             method: "DELETE",
           }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as ScrollLink } from "react-router-hash-link";
 import "../styles/header.css";
 
 export const Header = () => {
@@ -8,8 +8,8 @@ export const Header = () => {
       <div className="header-text">
         <h1>The Home Of Creativity</h1>
         <p>Where creatives meet the fashion adventurer</p>
-        <Link to="/sign-up"><button>Sign up</button></Link>
-      </div>
+        <ScrollLink smooth to="/#shops"><button>Shops</button></ScrollLink>
+        </div>
     </div>
   );
 };

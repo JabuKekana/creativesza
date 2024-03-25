@@ -13,7 +13,7 @@ const Cart = () => {
 
   const getShops = async () => {
     try {
-      const response = await fetch("http://192.168.7.141:5000/shops");
+      const response = await fetch("http://localhost:5000/shops");
       const jsonData = await response.json();
       setShops(jsonData);
     } catch (err) {
@@ -33,7 +33,7 @@ const Cart = () => {
       await Promise.all(
         cart.map(async (item) => {
           const response = await fetch(
-            `http://192.168.7.141:5000/shops/${item.shop_id}`
+            `http://localhost:5000/shops/${item.shop_id}`
           );
           if (response.ok) {
             const shopData = await response.json();

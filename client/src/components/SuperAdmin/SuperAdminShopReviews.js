@@ -21,7 +21,7 @@ const SuperAdminShopReviews = () => {
 
   const fetchReviews = async () => {
     try {
-      const response = await fetch(`http://192.168.7.141:5000/reviews/${shop_id}`);
+      const response = await fetch(`http://localhost:5000/reviews/${shop_id}`);
       const data = await response.json();
       setReviews(data);
     } catch (error) {
@@ -35,7 +35,7 @@ const SuperAdminShopReviews = () => {
 
   const handleDeleteReview = async (review_id) => {
     try {
-      const response = await fetch(`http://192.168.7.141:5000/reviews/${review_id}`, {
+      const response = await fetch(`http://localhost:5000/reviews/${review_id}`, {
         method: "DELETE",
       });
 

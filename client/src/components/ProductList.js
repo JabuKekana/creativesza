@@ -26,7 +26,7 @@ function ProductList() {
     try {
       // Fetch shop details
       const shopResponse = await fetch(
-        `http://192.168.7.141:5000/shops/${shop_id}`
+        `http://localhost:5000/shops/${shop_id}`
       );
       if (!shopResponse.ok) {
         throw new Error(`HTTP error! Status: ${shopResponse.status}`);
@@ -43,7 +43,7 @@ function ProductList() {
 
       // Fetch products
       const productsResponse = await fetch(
-        `http://192.168.7.141:5000/products/${shop_id}`
+        `http://localhost:5000/products/${shop_id}`
       );
       if (!productsResponse.ok) {
         throw new Error(`HTTP error! Status: ${productsResponse.status}`);
@@ -53,7 +53,7 @@ function ProductList() {
 
       // Fetch reviews
       const reviewsResponse = await fetch(
-        `http://192.168.7.141:5000/reviews/${shop_id}`
+        `http://localhost:5000/reviews/${shop_id}`
       );
       if (!reviewsResponse.ok) {
         throw new Error(`HTTP error! Status: ${reviewsResponse.status}`);
@@ -73,7 +73,7 @@ function ProductList() {
 
   const handleAddReview = async (newReviewData) => {
     try {
-      const response = await fetch("http://192.168.7.141:5000/reviews", {
+      const response = await fetch("http://localhost:5000/reviews", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

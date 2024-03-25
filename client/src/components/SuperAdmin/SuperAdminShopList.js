@@ -22,7 +22,7 @@ const SuperAdminShopList = () => {
   useEffect(() => {
     const fetchShops = async () => {
       try {
-        const response = await fetch("http://192.168.7.141:5000/shops");
+        const response = await fetch("http://localhost:5000/shops");
         const data = await response.json();
         setShops(data);
       } catch (err) {
@@ -36,7 +36,7 @@ const SuperAdminShopList = () => {
 
   const handleAddShop = async () => {
     try {
-      const response = await fetch("http://192.168.7.141:5000/shops", {
+      const response = await fetch("http://localhost:5000/shops", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -78,7 +78,7 @@ const SuperAdminShopList = () => {
     }
   
     try {
-      const response = await fetch(`http://192.168.7.141:5000/shops/${shopId}`, {
+      const response = await fetch(`http://localhost:5000/shops/${shopId}`, {
         method: "DELETE",
       });
   

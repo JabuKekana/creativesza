@@ -8,7 +8,7 @@ function ShopList() {
 
   const getShops = async () => {
     try {
-      const response = await fetch("http://192.168.7.141:5000/shops");
+      const response = await fetch("http://localhost:5000/shops");
       const jsonData = await response.json();
       setShops(jsonData);
     } catch (err) {
